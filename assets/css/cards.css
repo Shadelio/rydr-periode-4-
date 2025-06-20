@@ -1,0 +1,93 @@
+
+.aanbod-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.aanbod-sidebar {
+    flex: 0 0 250px; 
+}
+
+.aanbod-content {
+    flex: 1;
+}
+
+.cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.car-details {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.car-details img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0.5rem 0 1rem;
+}
+
+.car-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.car-brand h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.car-type {
+    font-size: 0.9rem;
+    color: #90A3BF;
+}
+
+.car-specification {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: auto; 
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.85rem;
+    color: #596780;
+}
+
+.car-specification span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.car-specification img {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.rent-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.rent-details .font-weight-bold {
+    font-size: 1.25rem;
+    color: #1A202C;
+}
